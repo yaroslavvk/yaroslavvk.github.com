@@ -1,0 +1,28 @@
+@media screen and (max-width: 980px) {
+	.tab {
+		float: none;
+		width: 415px;
+	}
+
+	.tab.active {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.tab-mobile {
+		margin-top: 372px;
+	}
+
+	.container {
+    	width: 415px;
+    	margin-top: 1px;
+	}
+
+	.btn-plus {
+		float: right;
+	}
+
+	.btn-minus {
+		float: right;
+	}
+}
