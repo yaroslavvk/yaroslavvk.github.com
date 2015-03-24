@@ -1,0 +1,47 @@
+.gallery-1 img, .gallery-2 img, .zoomable-close {
+	cursor: pointer;
+}
+
+.zoomable {
+}
+
+.zoomable-closed {
+	display: none;
+}
+
+.zoomable-img-wrapper {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.zoomable-img {
+	position: relative;
+	display: inline-block;
+}
+
+.zoomable-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-family: Arial;
+	font-size: 24pt;
+	color: white;
+	background: black;
+	width: 50px;
+	height: 50px;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.zoomable-img, .zoomable-close {
+	z-index: 1;
+}
+
