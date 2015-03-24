@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TagList</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/talky-talky.css">
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/Tag-List.js"></script>
+</head>
+<body>
+	<div class="conteiner1">
+	</div>
+	<div class="conteiner2">
+	</div>
+</body>
+<script>
+	'use strict';
+
+	(function() {
+		var box = $('.conteiner1');
+		var tags = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'dolor', 'ipsum', 'lorem'];
+		var talky = new Talky(box, tags);
+	})();
+
+	(function() {
+		var box = $('.conteiner2');
+		var tags = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'dolor', 'ipsum', 'lorem'];
+		var talky = new Talky(box, tags);
+	})();
+
+</script>
+</html>

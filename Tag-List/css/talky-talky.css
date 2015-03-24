@@ -1,0 +1,48 @@
+.conteiner1, .conteiner2 {
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: #CCD7FF;
+	min-width: 510px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form {
+	display: inline-block;
+}
+
+.tags-box div {
+	display: inline-block;
+	margin: 5px;
+}
+
+input {
+	height: 33px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 379px;
+}
+
+.addBtn {
+	width: 100px;
+}
+
+.tag {
+	background: #E2E4FF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-right: 0.5%;
+}
+
+.label {
+	cursor: pointer;
+}
+
+.conteiner-edit {
+	display: none;
+	padding: 1%;
+}
+
+.conteiner-show {
+	padding: 1%;
+}
