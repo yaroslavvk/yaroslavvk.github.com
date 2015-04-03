@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1,h2 {
+	margin-top: 30px;
+}
+
 h1 {
 	font-size: 24pt;
 }
@@ -11,10 +15,31 @@ h2 {
 	font-size: 20pt;
 }
 
-h1, h2, p {
+p {
 	margin: 30px;
 }
 
 a {
 	font-size: 15pt;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+.row div {
+	border: 1px solid;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 160px;
+}
+ .slider:hover, .tag-list:hover, .sidebar-tabs:hover, .tour:hover, .zoomable:hover {
+	background: #dadada;
+}
+
+.row a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
 }
