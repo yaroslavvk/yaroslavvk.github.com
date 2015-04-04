@@ -9,22 +9,24 @@
 	<script src="js/Tag-List.js"></script>
 </head>
 <body>
-	<div class="conteiner1">
-	</div>
-	<div class="conteiner2">
+	<div class="container">
+		<div class="tag-list1">
+		</div>
+		<div class="tag-list2">
+		</div>
 	</div>
 </body>
 <script>
 	'use strict';
 
 	(function() {
-		var box = $('.conteiner1');
+		var box = $('.tag-list1');
 		var tags = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'dolor', 'ipsum', 'lorem'];
 		var talky = new Talky(box, tags);
 	})();
 
 	(function() {
-		var box = $('.conteiner2');
+		var box = $('.tag-list2');
 		var tags = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'dolor', 'ipsum', 'lorem'];
 		var talky = new Talky(box, tags);
 	})();
