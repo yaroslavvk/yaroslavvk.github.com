@@ -7,8 +7,8 @@ To create widget - slider:
 3. Widget should work in all browsers since IE9.
 
 
-first tab
+first tab clicked
 ![Скриншот](imgs/slider-screen.png)
 
-second tab
+second tab clicked
 ![Скриншот](imgs/slider-screen-2.png)
