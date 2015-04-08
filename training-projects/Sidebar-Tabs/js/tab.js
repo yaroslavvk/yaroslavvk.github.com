@@ -9,7 +9,7 @@ var navBox = document.querySelectorAll('.navigation-box');
 var linkNamesArr = document.querySelectorAll('.link-name');
 var body = document.body;
 var imgsArr = document.querySelectorAll('img');
-var curWindowWidth = 980; // This script switch page from desktop to mobile and from mobile to desktop. Point to chenge - width 980px.
+var curWindowWidth = 980; // This script switch page from desktop to mobile and from mobile to desktop. Point to change - width 980px.
 var tabNames = [];	
 var tempArr;
 var hash;
