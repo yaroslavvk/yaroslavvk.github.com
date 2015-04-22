@@ -7,9 +7,9 @@ body {
 
 html, body {
 	height: 100%;
-	/*background: url(../imgs/bg.jpg) no-repeat;
-	background-size: contain cover;*/
-	background-color: #414b53;
+	background: url(../imgs/bg.jpg) no-repeat;
+	background-size: cover;
+	/*background-color: #414b53;*/
 	/*background-color: #333333;*/
 }
 
