@@ -43,6 +43,7 @@
 			'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + emailStringToArray[0] + '%40' + emailStringToArray[1] + '.' + emailStringToArray[2],
 			function onAjaxSuccess(data) {
 				if (data.used) {
+					$('#email').closest('.required').addClass('has-error');
 					massageNode.css('display', 'block');
 					massageNode.text('This email is already registered. Please fill out enother email');
 				}
@@ -84,7 +85,7 @@
 		}
 	});
 	$('.checkbox').find('input').on('change', function() {
-		if ($('.checkbox').find('input').prop("checked") && /[^@]+@[^@\.]+\.[^@]+/.test($('#email').val()) && !(/^[a-z]+$/i.test($('#password').val()) || /^\d+$/i.test($('#password').val()))) { // regexp validate for send form to server.
+		if ($('.checkbox').find('input').prop("checked") && !$('.required').hasClass('has-error') && /[^@]+@[^@\.]+\.[^@]+/.test($('#email').val()) && !(/^[a-z]+$/i.test($('#password').val()) || /^\d+$/i.test($('#password').val()))) { // regexp validate for send form to server.
 			$('.send-button').removeClass('disabled');
 		} else {
 			$('.send-button').addClass('disabled');
