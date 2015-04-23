@@ -84,9 +84,21 @@
 			}
 		}
 	});
+
 	$('.checkbox').find('input').on('change', function() {
-		if ($('.checkbox').find('input').prop("checked") && !$('.required').hasClass('has-error') && /[^@]+@[^@\.]+\.[^@]+/.test($('#email').val()) && !(/^[a-z]+$/i.test($('#password').val()) || /^\d+$/i.test($('#password').val()))) { // regexp validate for send form to server.
-			$('.send-button').removeClass('disabled');
+		// regexp validate befor send form to server.
+		if ($('.checkbox').find('input').prop("checked")) {
+			if ($('#email').val() === '' || $('#password').val() === '') {
+				$('.send-button').addClass('disabled');
+			} else if ($('.required').hasClass('has-error')) {
+				$('.send-button').addClass('disabled');
+			} else if (!(/[^@]+@[^@\.]+\.[^@]+/.test($('#email').val()))) {
+				$('.send-button').addClass('disabled');
+			} else if (!(/^[a-z]+$/i.test($('#password').val()) || !(/^\d+$/i.test($('#password').val())))) {
+				$('.send-button').addClass('disabled');
+			} else {
+				$('.send-button').removeClass('disabled');
+			}
 		} else {
 			$('.send-button').addClass('disabled');
 		}
