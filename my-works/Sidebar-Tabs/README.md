@@ -1,4 +1,4 @@
-# Sidebar-Tab
+# Sidebar-Tabs
 # Task:
 To create response page layout from .psd. The page should work in latest browsers since IE10.
 
