@@ -17,14 +17,14 @@ var eventTargetName;
 var stringForPush;
 var index;
 
+function getSplitArr(string) {
+	return string.split(/[+\-%]/);
+}
+
 for (var i = 0; i < tabs.length; i += 1) {
 	stringForPush = tabs[i].textContent.toLowerCase();
 	tempArr = getSplitArr(stringForPush);
 	tabNames.push(tempArr[0]);
-}
-
-function getSplitArr(string) {
-	return string.split(/[+\-%]/);
 }
 
 function getIndex(verifiableName) {
@@ -39,20 +39,6 @@ function removeActiveClass(node) {
 	for (var i = 0; i < node.length; i += 1) {
 		node[i].classList.remove('active');
 	}
-}
-
-function addActiveClass(targetName) {
-	index = getIndex(targetName);
-	removeActiveClass(tabs);
-	removeActiveClass(containers);
-	if (index === 0) {
-		containers[0].classList.add('active');
-		tabs[0].classList.add('active');
-	} else {
-		containers[index].classList.add('active');
-		tabs[index].classList.add('active');
-	}
-	getBtnsPlusMinus();
 }
 
 function getBtnsPlusMinus() {
@@ -74,6 +60,20 @@ function getBtnsPlusMinus() {
 			btnsMinus[j].classList.remove('btn-inline');
 		}
 	}
+}
+
+function addActiveClass(targetName) {
+	index = getIndex(targetName);
+	removeActiveClass(tabs);
+	removeActiveClass(containers);
+	if (index === 0) {
+		containers[0].classList.add('active');
+		tabs[0].classList.add('active');
+	} else {
+		containers[index].classList.add('active');
+		tabs[index].classList.add('active');
+	}
+	getBtnsPlusMinus();
 }
 
 function setDefaultStylesConts(contArr) {
