@@ -10,6 +10,7 @@ To create a validation form:
 	- simple password(only letters or only digits).
 	- do not `click` checkbox `I Agree with all`.
 	- etc.
+	
 	Check all user mistakes by `RegExp`.
 3. Check by `AJAX` email name on `https://aqueous-reaches-8130.herokuapp.com` - email validation server. If email is `true`(registered) - inform user about this.
 4. Send-button should has `disable` if form has any mistakes.
