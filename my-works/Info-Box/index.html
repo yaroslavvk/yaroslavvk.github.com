@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Info-Box</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/lib/jquery-1.11.2.min.js"></script>
+	<script src="js/info-box.js"></script>
+</head>
+<body>
+<!-- should make by script -->
+	<div class="content">
+		<div class="product-img">
+		</div>
+		<div class="info">
+			<h1 class="title">Time to Share: 6 for $3.99*</h1>
+			<p class="description">Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exefcitalion ullamoo laboris nisi ut aliquip ex ea commodo oonsequat.</p>
+		</div>
+		<div class="show-det">
+			<a href="#">
+				show details
+			</a>
+		</div>
+		<div class="buttons">
+			<div class="button button-btn-bg-white-left">
+				<span class="button button-btn-ic-gray-left">
+				</span>
+				<span>Prev</span>
+			</div>
+			<div class="button button-btn-bg-white-right">
+				<span>Next</span>
+				<span class="button button-btn-ic-gray-right">
+				</span>
+			</div>
+			<div class="button button-btn-lg-bg">
+				<span>Find A Store</span>
+				<span class="button button-arrow-side">
+				</span>
+			</div>
+		</div>
+	</div>
+<!-- should make by script -->
+	<script>
+		'use strict';
+
+		(function() {
+			var targetNode = $('.content'),
+				targetUrl = 'json/info_box.json';
+
+			$.getJSON(targetUrl,
+				function(data) {
+					console.log(data);
+				// $.parseJSON(data);
+				}
+			);
+
+			//another one method
+
+			// $.ajax({
+			// 	type: 'GET',
+			// 	url: url,
+			// 	data: 'string',
+			// 	dataType: 'json',
+			// 	mimeType: 'application/json',
+			// 	cache: true
+			// });
+
+			// var infobox = new infoBox(targetNode)
+			// 	// [
+			    // {
+			    //     "title": "Time to Share: 6 for $3.99*",
+			    //     "img": "comp_plate_promo1.png",
+			    //     "description": "Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exefcitalion ullamoo laboris nisi ut aliquip ex ea commodo oonsequat.",
+			    //     "note": "* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.",
+			    //     "productUrl": "/products/promo1.html"
+			    // },
+			// //     {
+			// //         "title": "Rise 'n shine",
+			// //         "img": "comp_plate_promo2.png",
+			// //         "description": "Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exefcitalion ullamoo laboris nisi ut aliquip ex ea commodo oonsequat.",
+			// //         "note": "* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.",
+			// //         "productUrl": "/products/promo2.html"
+			// //     },
+			// //     {
+			// //         "title": "PM Snackers: Brownie Bites",
+			// //         "img": "comp_plate_promo3.png",
+			// //         "description": "Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exefcitalion ullamoo laboris nisi ut aliquip ex ea commodo oonsequat.",
+			// //         "note": "* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.",
+			// //         "productUrl": "/products/promo3.html"
+			// //     },
+			// //     {
+			// //         "title": "PM Snackers: Brownie Bites new",
+			// //         "field": "comp_plate_promo4.png",
+			// //         "descrption": "Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exefcitalion ullamoo laboris nisi ut aliquip ex ea commodo oonsequat.",
+			// //         "note": "* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga. * At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.\n* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.\n* At vero eos et accusamus et iusto odo dtgntsslmos duclmus qui blandltlis praesentlum voluptatum delenrtl atque corruptl quos doQres et quas molestlas exceptun sint occaecatl cupidrtate non pro v dent, slmllique sunt In culpa qui otflcia deserunt mollrtia anlmi. id est la bo aim et dolorum tuga.",
+			// //         "productUrl": "/products/promo4.html"
+			// //     }
+			// // ]);
+		})();
+
+	</script>
+</body>
+</html>

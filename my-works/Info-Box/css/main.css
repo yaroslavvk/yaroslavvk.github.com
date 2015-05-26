@@ -1,0 +1,137 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+	font-family: Arial;
+}
+
+.content {
+	background: url(../imgs/comp_plate_graybasic.png) no-repeat;
+	width: 312px;
+	height: 325px;
+	margin: 70px auto;
+	border: 1px solid #cccccc;
+	border-radius: 1px 1px 5px 5px;
+	box-shadow: 2px 2px 2px #cccccc;
+}
+
+.product-img {
+	width: 312px;
+	height: 200px;
+	background: url(../imgs/comp_plate_promo1.png) no-repeat;
+}
+
+.title {
+	font: bold 1.3em/1.25 Arial;
+	color: #ed6c20;
+}
+
+.info {
+	height: 44px;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 19px;
+}
+
+.title, .description {
+	margin: 0 auto;
+}
+
+.description, .show-det {
+	font-size: 7pt;
+}
+
+.show-det, .buttons {
+	margin-left: 10px;
+}
+
+.buttons {
+  	margin-top: 30px;
+}
+
+/* sprites by http://spritegen.website-performance.org */
+.button {
+    background-image: url('../imgs/spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.button-arrow-side {
+    width: 10px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.button-btn-bg-orange-left {
+    width: 68px;
+    height: 26px;
+    background-position: -25px -5px;
+}
+
+.button-btn-bg-orange-right {
+    width: 68px;
+    height: 26px;
+    background-position: -5px -41px;
+}
+
+.button-btn-bg-white-left {
+    width: 68px;
+    height: 26px;
+    background-position: -5px -77px;
+}
+
+.button-btn-bg-white-right {
+    width: 68px;
+    height: 26px;
+    background-position: -5px -113px;
+}
+
+.button-btn-ic-brn-left {
+    width: 12px;
+    height: 10px;
+    background-position: -103px -5px;
+}
+
+.button-btn-ic-brn-right {
+    width: 12px;
+    height: 10px;
+    background-position: -125px -5px;
+}
+
+.button-btn-ic-gray-left {
+    width: 12px;
+    height: 10px;
+    background-position: -103px -25px;
+}
+
+.button-btn-ic-gray-right {
+    width: 12px;
+    height: 10px;
+    background-position: -125px -25px;
+}
+
+.button-btn-lg-bg {
+    width: 109px;
+    height: 26px;
+    background-position: -147px -5px;
+    margin-left: 30px;
+}
+
+.button-btn-lg-orange {
+    width: 110px;
+    height: 26px;
+    background-position: -147px -41px;
+    margin-left: 30px;
+}
+
+/*.button-btn-bg-white-left span {
+	margin: 0 auto;
+	margin-left: 29px;
+	margin-top: 4px;
+}
+
+.button-btn-bg-white-right span {
+	margin: 0 auto;
+	margin-left: 9px;
+	margin-top: 4px;
+}*/
