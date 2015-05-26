@@ -47,13 +47,12 @@
 			var targetNode = $('.content'),
 				targetUrl = 'json/info_box.json';
 
-			$.getJSON(targetUrl,
-				function(data) {
+			$.getJSON(targetUrl, function(data) {
 					console.log(data);
 					$.each(data, function(index, value) {
 						console.log(data[index].title);
 					});
-				// $.parseJSON(data);
+				$.parseJSON(data);
 				}
 			);
 
