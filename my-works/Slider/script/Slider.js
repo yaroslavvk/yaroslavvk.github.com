@@ -21,7 +21,7 @@
 			_this.stripTwo.removeClass("strip-hover");
 			_this.stripThree.removeClass("strip-hover");
 			_this.stripFour.removeClass("strip-hover");
-			_this.table.animate({
+			_this.table.stop().animate({
 				"margin-left": "0"
 			}, "slow");
 			clearInterval(_this.intervalID);
@@ -40,7 +40,7 @@
 			_this.stripOne.removeClass("strip-hover");
 			_this.stripThree.removeClass("strip-hover");
 			_this.stripFour.removeClass("strip-hover");
-			_this.table.animate({
+			_this.table.stop().animate({
 				"margin-left": "-910px"
 			}, "slow");
 			clearInterval(_this.intervalID);
@@ -59,7 +59,7 @@
 			_this.stripOne.removeClass("strip-hover");
 			_this.stripTwo.removeClass("strip-hover");
 			_this.stripFour.removeClass("strip-hover");
-			_this.table.animate({
+			_this.table.stop().animate({
 				"margin-left": "-1820px"
 			}, "slow");
 			clearInterval(_this.intervalID);
@@ -78,7 +78,7 @@
 			_this.stripOne.removeClass("strip-hover");
 			_this.stripTwo.removeClass("strip-hover");
 			_this.stripThree.removeClass("strip-hover");
-			_this.table.animate({
+			_this.table.stop().animate({
 				"margin-left": "-2730px"
 			}, "slow");
 			clearInterval(_this.intervalID);
@@ -93,11 +93,11 @@
 
 	Slider.prototype.nextPic = function() {
 		if (this.table.css("margin-left") === "-2730px") {
-			this.table.animate({
+			this.table.stop().animate({
 				"margin-left": "0px"
 			}, "slow");
 		} else {
-			this.table.animate({
+			this.table.stop().animate({
 				"margin-left": "-=910px"
 			}, "slow");
 		}
