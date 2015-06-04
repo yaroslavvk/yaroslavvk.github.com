@@ -107,7 +107,7 @@
 				}, duration, function() {
 					$('.description-note').removeClass('expand');
 					$('.description-note').addClass('collapse');
-					$('.product-img img').fadeToggle(duration + 200);
+					$('.product-img img').fadeToggle(duration + 300);
 				});
 			} else {
 				$('.product-img img').fadeToggle(duration, function() {
