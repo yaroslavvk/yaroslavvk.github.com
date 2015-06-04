@@ -16,7 +16,7 @@
 		indexOfLastContentObject = contentObjectsFromServer.length - 1;
 		indexOfCurrentContentObject = 0;
 		indexOfFirstContentObject = 0;
-		duration = 300;
+		duration = 400;
 
 		// adding hover effects for buttons
 
