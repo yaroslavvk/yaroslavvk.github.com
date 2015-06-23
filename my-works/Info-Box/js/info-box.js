@@ -58,34 +58,33 @@
 
 	// hover effects were added
 
+	function displayContent(indexOfCurrentContentObject) {
+		$descrNote.removeClass('description-note-collapse');
+		$linkDet.hide().fadeIn(duration);
+		$title.text(contentObjectsFromServer[indexOfCurrentContentObject].title).hide().fadeIn(duration);
+		$descr.text(contentObjectsFromServer[indexOfCurrentContentObject].description).hide().fadeIn(duration);
+		$note.text(contentObjectsFromServer[indexOfCurrentContentObject].note).hide().fadeIn(duration);
+		imgNode = '<img src="imgs/' + contentObjectsFromServer[indexOfCurrentContentObject].img + '">';
+		$productImg.html(imgNode).hide().fadeIn(duration);
+	};
+
+	function setDefault() {
+		$descrNote.removeClass('expand');
+		$descrNote.css('height', '29px');
+		$descrNote.addClass('collapse');
+		$linkDet.text('show details');
+	}
+
 	// get content from server
 
 	$.getJSON(targetJsonUrl, function(data) {
 		contentObjectsFromServer = data;
 		numberOfContentObjects = contentObjectsFromServer.length;
 		indexOfLastContentObject = contentObjectsFromServer.length - 1;
+		displayContent(indexOfFirstContentObject);
 
 		// adding events for buttons
 		
-		function displayContent(indexOfCurrentContentObject) {
-			$descrNote.removeClass('description-note-collapse');
-			$linkDet.hide().fadeIn(duration);
-			$title.text(contentObjectsFromServer[indexOfCurrentContentObject].title).hide().fadeIn(duration);
-			$descr.text(contentObjectsFromServer[indexOfCurrentContentObject].description).hide().fadeIn(duration);
-			$note.text(contentObjectsFromServer[indexOfCurrentContentObject].note).hide().fadeIn(duration);
-			imgNode = '<img src="imgs/' + contentObjectsFromServer[indexOfCurrentContentObject].img + '">';
-			$productImg.html(imgNode).hide().fadeIn(duration);
-		};
-
-		function setDefault() {
-			$descrNote.removeClass('expand');
-			$descrNote.css('height', '29px');
-			$descrNote.addClass('collapse');
-			$linkDet.text('show details');
-		}
-
-		displayContent(indexOfFirstContentObject);
-
 		$('.button-btn-bg-white-right').on('click', function() {
 			setDefault();
 			if (indexOfCurrentContentObject === indexOfLastContentObject) {
