@@ -58,8 +58,6 @@
 
 	// hover effects were added
 
-	displayContent(indexOfFirstContentObject);
-
 	// get content from server
 
 	$.getJSON(targetJsonUrl, function(data) {
@@ -68,6 +66,7 @@
 		indexOfLastContentObject = contentObjectsFromServer.length - 1;
 
 		// adding events for buttons
+		
 		function displayContent(indexOfCurrentContentObject) {
 			$descrNote.removeClass('description-note-collapse');
 			$linkDet.hide().fadeIn(duration);
@@ -84,6 +83,8 @@
 			$descrNote.addClass('collapse');
 			$linkDet.text('show details');
 		}
+
+		displayContent(indexOfFirstContentObject);
 
 		$('.button-btn-bg-white-right').on('click', function() {
 			setDefault();
