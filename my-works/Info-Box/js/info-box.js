@@ -113,10 +113,10 @@
 				$info.animate({
 					top: '205px'
 				}, duration);
-				$linkDet.text('show details');
 				$descrNote.animate({
 					height: '29px'
 				}, duration, function() {
+					$linkDet.text('show details');
 					$descrNote.removeClass('expand');
 					$descrNote.addClass('collapse');
 					$content.find('img').fadeToggle(duration);
