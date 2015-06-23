@@ -49,6 +49,9 @@ table {
 .info {
     padding: 0px 10px;
 }
+.info-absolute {
+    position: absolute;
+}
 .title {
     font: bold 15pt Arial;
     color: #ed6c20;
