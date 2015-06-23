@@ -84,7 +84,7 @@
 		displayContent(indexOfFirstContentObject);
 
 		// adding events for buttons
-		
+
 		$('.button-btn-bg-white-right').on('click', function() {
 			setDefault();
 			if (indexOfCurrentContentObject === indexOfLastContentObject) {
@@ -109,11 +109,11 @@
 
 		$('.show-det').on('click', function() {
 			if ($descrNote.hasClass('expand')) {
-				$linkDet.text('show details');
 				$info.addClass('info-absolute');
 				$info.animate({
 					top: '205px'
 				}, duration);
+				$linkDet.text('show details');
 				$descrNote.animate({
 					height: '29px'
 				}, duration, function() {
