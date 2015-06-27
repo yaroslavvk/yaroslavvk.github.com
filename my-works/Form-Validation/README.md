@@ -3,7 +3,7 @@
 To create a validation form:
 
 1. Form should has required fields(`email`, `password`).
-2. Form shouldn't send with empry or wrong text in the required fields. Examples of user mistakes:
+2. Form shouldn't send with empty or wrong text in the required fields. Examples of user mistakes:
 	- required field do not fill out.
 	- email mistakes.
 	- the password is too small.
