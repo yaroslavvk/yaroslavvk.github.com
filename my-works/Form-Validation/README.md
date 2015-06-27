@@ -12,7 +12,7 @@ To create a validation form:
 	- etc.
 	
 	Check all user mistakes by `RegExp`.
-3. Check by `AJAX` email name on `https://aqueous-reaches-8130.herokuapp.com` - email validation server. If email is `true`(registered) - inform user about this.
+3. Check by `AJAX` email name on `https://aqueous-reaches-8130.herokuapp.com` - email database server. If email is `true`(registered) - inform user about this.
 4. Send-button should has `disable` if form has any mistakes.
 5. Form should work in all browsers since IE9.
 
