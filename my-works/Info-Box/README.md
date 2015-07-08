@@ -2,7 +2,7 @@
 # Task:
 To create widget - Info-Box:
 
-1. Content should take from `info_box.json`.
+1. Content should take from `json/info_box.json`.
 2. Widget should be the same as - `artifacts/info_box.swf`.
 3. Widget should work in all browsers since IE9.
 
