@@ -10,5 +10,6 @@ To create widget - Info-Box:
 specification
 ![Скриншот](artifacts/info_box_spec.png)
 
-widget visualisation
+visualisation
+
 ![Скриншот](artifacts/sample.png)
