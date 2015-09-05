@@ -8,5 +8,6 @@ To create a responsive-header from tamplate:
 desktop
 ![Скриншот](psd/html+css-test-1200.png)
 
+
 mobile
 ![Скриншот](psd/html+css-test-320.png)
