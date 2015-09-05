@@ -1,55 +1,56 @@
 'use strict';
 
-(function () {
+// (function () {
 	var groupNode;
 	var massageNode;
 	var inputId;
 	var inputVal;
 	var request;
-	// var STATE_READY = 4;
-	// var url;
+	var STATE_READY = 4;
+	var url;
 	var emailString;
 	var emailStringToArray;
 	var answerObj;
 
 	// It's native JS ajax http request method:
 
-	// function isValidMailInBase(inputVal) {
-	// 	request = new XMLHttpRequest();
-	// 	emailString = inputVal;
-	// 	emailStringToArray = emailString.split(/[@.%]/);
-	// 	url = 'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + emailStringToArray[0] + '%40' + emailStringToArray[1] + '.' + emailStringToArray[2];
-	// 	request.open('get', url, true);
-	// 	request.onreadystatechange = function() {
-	// 		if (request.readyState === STATE_READY) {
-	// 			answerObj = JSON.parse(request.responseText);
-	// 			// console.log(request.responseText);
-	// 			// console.log(answerObj);
-	// 			if (answerObj.used) {
-	// 				massageNode.css('display', 'block');
-	// 				massageNode.text('This email is already registered. Please fill out enother email.');
-	// 			}
-	// 		}
-	// 	};
-	// 	request.send();
-	// }
+	function isValidMailInBase(inputVal) {
+		request = new XMLHttpRequest();
+		emailString = inputVal;
+		emailStringToArray = emailString.split(/[@.%]/);
+		url = 'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + emailStringToArray[0] + '%40' + emailStringToArray[1] + '.' + emailStringToArray[2];
+		request.open('get', url, true);
+		request.onreadystatechange = function() {
+			if (request.readyState === STATE_READY) {
+				answerObj = JSON.parse(request.responseText);
+				console.log(request.responseText);
+				console.log(answerObj);
+				if (answerObj.used) {
+					massageNode.css('display', 'block');
+					massageNode.text('This email is already registered. Please fill out enother email.');
+				}
+			}
+		};
+		request.send();
+	}
 
 	// It's jQuery ajax http request method:
 
-	function isValidMailInBase(inputVal) {
-		emailString = inputVal;
-		emailStringToArray = emailString.split(/[@.%]/);
-		$.get(
-			'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + emailStringToArray[0] + '%40' + emailStringToArray[1] + '.' + emailStringToArray[2],
-			function onAjaxSuccess(data) {
-				if (data.used) {
-					$('#email').closest('.required').addClass('has-error');
-					massageNode.css('display', 'block');
-					massageNode.text('This email is already registered. Please fill out enother email');
-				}
-			}
-		);
-	}
+	// function isValidMailInBase(inputVal) {
+	// 	emailString = inputVal;
+	// 	emailStringToArray = emailString.split(/[@.%]/);
+	// 	// console.log(emailStringToArray);
+	// 	$.get(
+	// 		'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + emailStringToArray[0] + '%40' + emailStringToArray[1] + '.' + emailStringToArray[2],
+	// 		function onAjaxSuccess(data) {
+	// 			if (data.used) {
+	// 				$('#email').closest('.required').addClass('has-error');
+	// 				massageNode.css('display', 'block');
+	// 				massageNode.text('This email is already registered. Please fill out enother email');
+	// 			}
+	// 		}
+	// 	);
+	// }
 
 	$('input').on('blur', function(event) {
 		groupNode = $(event.target).closest('.required');
@@ -103,4 +104,4 @@
 			$('.send-button').addClass('disabled');
 		}
 	});
-})();
+// })();

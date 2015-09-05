@@ -1,0 +1,320 @@
+@media (max-width:768px) {
+    #header-info-wrapper, #header-nav-wrapper {
+        min-width: 640px;
+    }
+    #header-info {
+        margin: 0 auto;
+        font-size: 22pt;
+    }
+    #header-phone, #header-user-panal {
+        height: 96px;
+    }
+    #header-phone {
+        background-color: white;
+        color: #838383;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #header-user-panal {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-center-vertical {
+        padding: 28px;
+    }
+    #price {
+        width: 154px;
+    }
+    #price-btn {
+        height: 96px;
+        font-size: 22pt;
+        border: 0;
+    }
+    #my-account, #search {
+        border-left: 2px solid #444444;
+    }
+    #my-account {
+        width: 385px;
+    }
+    #user-img {
+        width: 40px;
+        height: 38px;
+        background-position: -53px -141px;
+    }
+    #search {
+        width: 101px;
+    }
+    #search-img {
+        width: 38px;
+        height: 38px;
+        background-position: -5px -141px;
+    }
+    #logo {
+        height: 200px;
+        padding: 56px;
+    }
+    #logo-img {
+        margin: 0 auto;
+        width: 358px;
+        height: 88px;
+        background-position: -5px -43px;
+    }
+    #brand {
+        display: block;
+        color: #ffffff;
+    }
+    #wallet-img {
+        width: 51px;
+        height: 49px;
+        background-position: -103px -141px;
+    }
+    #cart-select {
+        display: none;
+    }
+    #cart > #wallet-field {
+        height: 96px;
+        font-size: 22pt;
+    }
+    #cart > #wallet-field > #wallet {
+        padding-top: 13px;
+        padding-left: 20px;
+    }
+    #cart > #wallet-field > #items {
+        padding: 20px;
+    }
+    body #header-nav-wrapper {
+        position: relative;
+    }
+    #header-nav {
+        margin: 0 auto;
+    }
+    #sub-menu a {
+        color: #ffffff;
+        background-color: #fd926d;
+    }
+    #navbar > .navbar {
+        background-color: #fd926d;
+        text-transform: uppercase;
+    }
+    #header-nav-wrapper > #header-nav> #navbar {
+        position: absolute;
+        top: 350px;
+    }
+    #navbar button {
+        background-color: #fd926d;
+        border: 0;
+    }
+}
+@media (min-width:768px), (min-width:992px), (min-width:1200px) {
+    #header-info {
+        margin: 0 auto;
+        font-size: 8pt;
+    }
+    #header-phone, #header-user-panal {
+        height: 30px;
+    }
+    #header-phone, #header-user-panal, #price {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-center-vertical {
+        padding: 8px;
+    }
+    #price-btn {
+        height: 30px;
+        font-size: 8pt;
+        border: 0;
+        border-left: 1px solid #444444;
+        border-radius: 0;
+    }
+    #my-account, #search {
+        border-left: 1px solid #444444;
+    }
+    #search {
+        border-right: 1px solid #444444;
+    }
+    #user-img {
+        width: 14px;
+        height: 13px;
+        background-position: -160px -5px;
+    }
+    #search-img {
+        width: 15px;
+        height: 15px;
+        background-position: -135px -5px;
+    }
+    #logo {
+        height: 106px;
+        padding: 39px;
+        padding-left: 0;
+    }
+    #logo-img {
+        width: 120px;
+        height: 28px;
+        background-position: -5px -5px;
+    }
+    #navbar {
+        height: 106px;
+        padding: 27px;
+        padding-left: 0;
+    }
+    #brand {
+        display: none;
+    }
+    #header-nav {
+        margin: 0 auto;
+    }
+    #wallet-img {
+        width: 20px;
+        height: 19px;
+        background-position: -184px -5px;
+    }
+    #navbar, #sub-menu {
+        padding-right: 0;
+    }
+    #navbar > nav {
+        background-color: white;
+        border: 0;
+        box-shadow: none;
+    }
+    #sub-menu > ul {
+        float: right;
+    }
+    #sub-menu a {
+        background-color: white;
+    }
+    #first-link {
+        padding-left: 0;
+    }
+    #cart {
+        padding-right: 7px;
+    }
+    #price {
+        width: 72px;
+    }
+    #my-account {
+        width: 127px;
+    }
+    #search {
+        width: 36px;
+    }
+}
+@media (min-width:970px), (min-width:1200px) {
+    #header-info, #header-nav-wrapper, #header-info {
+        width: 970px;
+    }
+}
+#header-info {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#header-info .max-height-col {
+    height: 100%;
+}
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.bg-black {
+    background-color: black;
+}
+#price-btn {
+    background-color: black;
+    color: white;
+}
+#user-img {
+    float: left;
+}
+#cart {
+    padding-top: 23px;
+}
+#cart > .cart-field {
+    height: 33px;
+    border: 1px solid #d6d6d6;
+    padding-left: 0;
+    color: #949393;
+}
+#cart-btn {
+    height: 31px;
+    font-size: 9pt;
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+    box-shadow: none;
+    text-align: left;
+    color: #949393;
+}
+#cart > #wallet-field {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: #fafafa;
+}
+#wallet {
+    float: left;
+}
+#items {
+    float: right;
+}
+#cart-select {
+    padding-right: 0;
+}
+#cart-select > .btn-group, #cart-btn {
+    width: 100%;
+}
+#cart-btn > span {
+    float: right;
+    margin-top: 8px;
+}
+#my-account a {
+    text-decoration: none;
+    color: white;
+}
+/* sprites generated by http://spritegen.website-performance.org/ */
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/*.sprite-logo {
+                                    width: 120px;
+                                    height: 28px;
+                                    background-position: -5px -5px;
+}
+.sprite-logo-big {
+                                    width: 358px;
+                                    height: 88px;
+                                    background-position: -5px -43px;
+}
+.sprite-search {
+                                    width: 15px;
+                                    height: 15px;
+                                    background-position: -135px -5px;
+}
+.sprite-search-big {
+                                    width: 38px;
+                                    height: 38px;
+                                    background-position: -5px -141px;
+}
+.sprite-user {
+                                    width: 14px;
+                                    height: 13px;
+                                    background-position: -160px -5px;
+}
+.sprite-user-big {
+                                    width: 40px;
+                                    height: 38px;
+                                    background-position: -53px -141px;
+}
+.sprite-wallet {
+                                    width: 20px;
+                                    height: 19px;
+                                    background-position: -184px -5px;
+}
+.sprite-wallet-big {
+                                    width: 51px;
+                                    height: 49px;
+                                    background-position: -103px -141px;
+}*/

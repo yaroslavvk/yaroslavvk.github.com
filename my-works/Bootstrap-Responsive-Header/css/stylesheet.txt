@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-logo {
+    width: 120px;
+    height: 28px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo-big {
+    width: 358px;
+    height: 88px;
+    background-position: -5px -43px;
+}
+
+.sprite-search {
+    width: 15px;
+    height: 15px;
+    background-position: -135px -5px;
+}
+
+.sprite-search-big {
+    width: 38px;
+    height: 38px;
+    background-position: -5px -141px;
+}
+
+.sprite-user {
+    width: 14px;
+    height: 13px;
+    background-position: -160px -5px;
+}
+
+.sprite-user-big {
+    width: 40px;
+    height: 38px;
+    background-position: -53px -141px;
+}
+
+.sprite-wallet {
+    width: 20px;
+    height: 19px;
+    background-position: -184px -5px;
+}
+
+.sprite-wallet-big {
+    width: 51px;
+    height: 49px;
+    background-position: -103px -141px;
+}
