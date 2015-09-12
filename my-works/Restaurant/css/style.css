@@ -1,0 +1,236 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster.otf');
+}
+
+body {
+	background-color: #f7efe1;
+}
+
+.container {
+	width: 1050px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background: url(../img/images/bg.png);
+}
+
+.lines-tape-box {
+	margin: 0 auto;
+	height: 1485px;
+	width: 553px;
+	position: relative;
+}
+
+.line {
+	width: 79px;
+	height: 1485px;
+	float: left;
+}
+
+.line-one {
+	background-color: #f75e50;
+}
+
+.line-two {
+	background-color: #eac761;
+}
+
+.line-three {
+	background-color: #e8df9c;
+}
+
+.line-four {
+	background-color: #91c09e;
+}
+
+.line-five {
+	background-color: #dcd180;
+}
+
+.line-six {
+	background-color: #dba382;
+}
+
+.line-seven {
+	background-color: #b5b564;
+}
+
+.tape-box {
+	position: absolute;
+	top: 589px;
+	left: -14.5px;
+	text-align: center;
+	font-family: 'Lobster';
+	font-size: 60px;
+	color: white;
+	text-shadow: 0px 2px 2px black;
+}
+
+.tape-main {
+	width: 586px;
+	height: 95px;
+	background-color: #6c6656;
+	position: relative;
+	left: -2px;
+}
+
+.tape-main h1 {
+	padding-top: 16px;
+}
+
+.triangle-left {
+	position: absolute;
+	top: 95px;
+	left: -2px;
+	z-index: 1;
+}
+
+.triangle-right {
+	position: absolute;
+	z-index: 1;
+	top: 95px;
+	right: 2px;
+}
+
+.tape-additional-one, .tape-additional-two {
+	width: 48px;
+	height: 95px;
+	background-color: #635d4e;
+	position: absolute;
+	left: -33px;
+	top: 20px;
+}
+
+.tape-additional-two {
+	left: 567px;
+}
+
+.triangle-top-left {
+	width: 0;
+	height: 0;
+	border-top: 47px solid #635d4e;
+	border-right: 30px solid transparent;
+	position: absolute;
+	left: 48px;
+}
+
+.triangle-bottom-left {
+	width: 0;
+	height: 0;
+	border-bottom: 47px solid #635d4e;
+	border-right: 30px solid transparent;
+	position: absolute;
+	left: 48px;
+	top: 48px;
+}
+
+.triangle-top-right {
+	width: 0;
+	height: 0;
+	border-top: 47px solid #635d4e;
+	border-left: 30px solid transparent;
+	position: absolute;
+	left: -30px;
+}
+
+.triangle-bottom-right {
+	width: 0;
+	height: 0;
+	border-bottom: 47px solid #635d4e;
+	border-left: 30px solid transparent;
+	position: absolute;
+	left: -30px;
+	top: 48px;
+}
+
+.links-box {
+	position: absolute;
+	top: 829px;
+	margin-top: 87px;
+	margin-bottom: 87px;
+	width: 1050px;
+}
+
+.order-box {
+	height: 270px;
+	border-top: 1px solid #7d7769;
+	border-bottom: 1px solid #7d7769;
+	background: url(../img/images/bg1.png);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.frame {
+	height: 14px;
+	background-color: #f7efe1;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.links {
+	display: inline-block;
+	margin-top: 74px;
+}
+
+.links a {
+	margin-left: 55px;
+	display: inline-block;
+}
+
+.links :first-child {
+	margin-left: 0px;
+}
+
+.menu {
+	position: absolute;
+	top: 200px;
+	font-family: 'Lobster';
+	font-size: 120px;
+	color: #996633;
+	text-shadow: 0px 1px 1px black;
+}
+
+.menu h1 {
+	position: absolute;
+	top: 75px;
+ 	left: 400px;
+}
+
+.bread {
+	width: 178px;
+	height: 101px;
+	background: url(../img/images/bread.png);
+}
+
+.donuts {
+	width: 137px;
+	height: 120px;
+	background: url(../img/images/donuts.png);
+}
+
+.cake {
+	width: 151px;
+	height: 111px;
+	background: url(../img/images/cake.png);
+}
+
+/*sprites*/
+
+.bread:hover {
+	background: url(../img/images/bread-hover.png);
+}
+
+.donuts:hover {
+	background: url(../img/images/donuts-hover.png);
+}
+
+.cake:hover {
+	background: url(../img/images/cake-hover.png);
+}
