@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CART</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+		<script src="js/lib/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="content">
+			</div>
+			<h1 class="total-price">
+			</h1>
+			<form role="form" class="form" action="javascript:alert('Благодарим за покупку! Наши менеджеры свяжутся с Вами в ближайшее время');" novalidate>
+				<div class="form-group">
+					<input class="form-control modified" name=name id="name" placeholder="Имя" type="text" required>
+					<div class="alert alert-danger massage"></div>
+				</div>
+				<div class="form-group">
+					<input class="form-control modified" name=tel id="phone" placeholder="Номер телефона (в формате +38(098)968-54-27)" type="tel" required>
+					<div class="alert alert-danger massage"></div>
+				</div>
+				<div class="form-group">
+					<input class="form-control modified" name=tel id="email" placeholder="E-mail" type="email" required>
+					<div class="alert alert-danger massage"></div>
+				</div>
+				<div class="form-group">
+					<input class="form-control modified" name=tel id="koment" placeholder="Комментарий" type="text">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+		<script src="js/cart.js"></script>
+	</body>
+</html>
