@@ -1,5 +1,5 @@
 (function() {
-    angular.module('serversRouteModule', ['serversListModule', 'ngRoute', 'ngDialog']);
+    angular.module('serversRouteModule', ['serversListModule', 'ngRoute']);
 
     function getTemplate($routeProvider) {
         $routeProvider.

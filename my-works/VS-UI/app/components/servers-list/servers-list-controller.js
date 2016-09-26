@@ -1,23 +1,5 @@
 angular.module('serversRouteModule')
-	.controller('serversListController', function($scope, $filter, Servers, $routeParams, ngDialog) {
-
-		$scope.h1 = 'Hello!';
-		$scope.h2 = 'World!';
-
-		$scope.clickToOpen = function () {
-			$scope.modal = ngDialog.open({
-				template: 'app/components/directives/ngDialog/modal.html',
-				className: 'ngDialog-theme-default',
-				disableAnimation: true,
-				scope: $scope
-			});
-		};
-
-		$scope.closeThisModal = function () {
-			console.log($scope.modal);
-			$scope.modal.close();
-		};
-
+	.controller('serversListController', function($scope, $filter, Servers, $routeParams) {
 		function refreshData() {
 			$scope.servers = Servers.getServers();
 			$scope.serversVer = Servers.getServersVer();
